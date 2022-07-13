@@ -695,7 +695,7 @@ footer .container .footer-row .col-3 .icon a{
 footer .container .footer-row .col-3 .icon a i{
     color: #009f4d;
 }
-footer .backToTop{
+.backToTop{
     padding: 5px 10px;
     background-color: #009f4d;
     border: 1px solid #009f4d;
@@ -704,6 +704,6 @@ footer .backToTop{
     right: 15px;
     z-index: 1;
 }
-footer .backToTop i{
+.backToTop i{
     color: #fff;
 }
