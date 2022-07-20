@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css "
+    />
+    <!-- line awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- gg font======= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&family=Volkhov:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Jqueryy______- -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/universe.css" />
+    <script>
+      jQuery(function ($) {
+        var $navbar = $(".header_nav");
+        $(window).scroll(function (event) {
+          var $current = $(this).scrollTop();
+          if ($current > 0) {
+            $navbar.addClass("navbar-color");
+          } else {
+            $navbar.removeClass("navbar-color");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="fixed-top header_nav">
+      <div class="container py-4">
+        <div class="header-logo">
+          <h1>
+            <a href="./index.html"
+              >Farmstead
+              <i class="fa fa-leaf"></i>
+            </a>
+          </h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#"> Home </a></li>
+            <li><a href="#"> About us </a></li>
+            <li><a href="#"> Services</a></li>
+            <li><a href="./Blogpost.html"> Blog posts </a></li>
+            <li><a href="./blogsingle.html">Blog single </a></li>
+            <li><a href="./contactus.html"> Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- section inner banner -->
+    <div class="inner-banner pt-5">
+      <div class="breadcrumbtitle container">
+        <h4>Blog Posts</h4>
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a class="text-decoration-none" href="./index.html ">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Contact Us
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- / section inner banner -->
+
+    <!-- contact us -->
+    <section class="py-5 information">
+      <div class="container my-5">
+        <div class="contactus">
+          <div class="mx-auto pt-4" style="max-width: 1000px">
+            <div class="row">
+              <div class="col-md-5 col_left">
+                <h5>Get in touch</h5>
+                <h3>Contact Us</h3>
+                <div class="d-flex contact-inform">
+                  <div class="cont-left me-2">
+                    <i class="las la-globe-asia"></i>
+                  </div>
+                  <div class="cont-right">
+                    <h6>Company Address</h6>
+                    <p>10001, 5th Avenue, 12202 street, USA.</p>
+                  </div>
+                </div>
+                <div class="d-flex contact-inform mt-4">
+                  <div class="cont-left me-2">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="cont-right">
+                    <h6>Call Us</h6>
+                    <p><a href="tel:+1(21) 234 4567">+1(21) 112 7368</a></p>
+                  </div>
+                </div>
+                <div class="d-flex contact-inform mt-4">
+                  <div class="cont-left me-2">
+                    <i class="fa-solid fa-envelope-open"></i>
+                  </div>
+                  <div class="cont-right">
+                    <h6>Email Us</h6>
+                    <p>
+                      <a href="mailto:example@mail.com" class="mail"
+                        >example@mail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex contact-inform mt-4">
+                  <div class="cont-left me-2">
+                    <i class="fa-solid fa-headphones"></i>
+                  </div>
+                  <div class="cont-right">
+                    <h6>Customer Support</h6>
+                    <p>
+                      <a href="mailto:info@support.com" class="mail"
+                        >info@support.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7 col_right">
+                <form action="#">
+                  <div class="input-right">
+                    <input
+                      type="text"
+                      name="w3lName"
+                      id="w3lName"
+                      placeholder="Your Name*"
+                      class="contact-input"
+                      required=""
+                    />
+                    <input
+                      type="email"
+                      name="w3lSender"
+                      id="w3lSender"
+                      placeholder="Your Email*"
+                      class="contact-input"
+                      required=""
+                    />
+                    <input
+                      type="text"
+                      name="w3lSubect"
+                      id="w3lSubect"
+                      placeholder="Subject*"
+                      class="contact-input"
+                      required=""
+                    />
+                    <input
+                      type="text"
+                      name="w3lWebsite"
+                      id="w3lWebsite"
+                      placeholder="Website URL*"
+                      class="contact-input"
+                      required=""
+                    />
+                  </div>
+                  <div class="input-right">
+                    <textarea
+                      name="w3lMessage"
+                      id="w3lMessage"
+                      placeholder="Type your message here*"
+                      required=""
+                    ></textarea>
+                  </div>
+                  <button>SEND MESSAGE</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5097522332107!2d106.67765461477141!3d10.772215392324373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fca39e3b493%3A0x865af6a617c57d82!2sCyberSoft%20Academy!5e0!3m2!1sen!2s!4v1658247623244!5m2!1sen!2s"
+      width="100%"
+      height="330"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <footer class="py-5">
+        <div class="containerlayout">
+          <div class="col ps-5 pe-3">
+            <div class="item_left">
+              <h3>FIND US</h3>
+              <div>
+                <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
+                <p>Phone: <a href="">+ 12 234 56790</a></p>
+                <p>Email: <a href="">info@example.com</a></p>
+                <p>Fax: <a href="">+ 11 367 21890</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col px-3">
+            <div class="item">
+              <h4>
+                <a href="#">
+                  Farmstead
+                  <i class="footer_leaf fa fa-leaf"></i>
+                </a>
+                
+              </h4>
+              <p class="mt-3">
+                Duis imperdiet sapien tortor, vitae congue diam auctor vitae.
+                Aliquam eget turpis ornare, euismod ligul aeget, enenatis dui.
+              </p>
+              <p class="w3layouts mt-5">
+                @ 2021 Farmstead. All rights reserved. Design by
+                <a href="https://w3layouts.com/">W3Layouts</a>
+              </p>
+            </div>
+          </div>
+          <div class="col px-3">
+            <div class="item_right">
+              <h3>NEWSLETTER</h3>
+              <p class="mt-3">
+                Subscribe to our mailing list and get updates to your email inbox.
+              </p>
+              <form action="#" class="subscribe d-flex mt-3" method="post">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required=""
+                />
+                <button>
+                  <span class="fa fa-paper-plane" aria-hidden="true"></span>
+                </button>
+              </form>
+              <ul class="social mt-4 pt-2">
+                <li><a href="#facebook" > <i class="lab la-facebook-f"></i></a>
+                </li>
+                <li><a href="#linkedin"><i class="lab la-linkedin-in"></i></a>
+                </li>
+                <li><a href="#twitter"><i class="lab la-twitter"></i></a>
+                </li>
+                <li><a href="#google"><i class="lab la-google-plus"></i></a>
+                </li>
+                <li><a href="#github"><i class="lab la-github"></i></a>
+                </li>
+            </ul>
+            </div>
+           
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
