@@ -21,54 +21,55 @@
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="../css/service.css">
+  <link rel="stylesheet" href="./css/service.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <link rel="stylesheet" href="./css/universe.css" />
+  <script>
+    jQuery(function ($) {
+      var $navbar = $(".header_nav");
+      $(window).scroll(function (event) {
+        var $current = $(this).scrollTop();
+        if ($current > 0) {
+          $navbar.addClass("navbar-color");
+        } else {
+          $navbar.removeClass("navbar-color");
+        }
+      });
+    });
+  </script>
 </head>
 <body>
-    <header class="header nav-fixed">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <span>Farmstead</span>
-                <i class="fa fa-leaf"></i
-              ></a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-welcome-item-r"></span>
-              </button>
-              <div
-                class="collapse navbar-collapse justify-content-end"
-                id="navbarNavAltMarkup"
-              >
-                <div class="navbar-nav">
-                  <a
-                    class="nav-link me-4 text-danger"
-                    aria-current="page"
-                    href="#"
-                    >Home</a
-                  >
-                  <a class="nav-link me-4 text-danger" href="#">About</a>
-                  <a class="nav-link me-4 text-danger" href="#">Service</a>
-                </div>
+  <header class="header nav-fixed header_nav">
+    <div class="container py-4 ">
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <span>Farmstead</span>
+            <i class="fa fa-leaf"></i></a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link me-4 " aria-current="page" href="./index.html">HOME</a>
+                <a class="nav-link me-4  " href="./about.html">ABOUT</a>
+                <a class="nav-link me-4 " href="./services.html">SERVICE</a>
+                <a class="nav-link me-4 " href="./Blogpost.html">BLOG POST </a>
+                <a class="nav-link me-4 " href="./Blogpost.html">BLOG SINGLE</a>
+                <a class="nav-link me-4 " href="./contactus.html">CONTACT</a>
               </div>
             </div>
-          </nav>
-        </div>
-      </header>
+            <button class="navbar-toggler">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+    </div>
+  </header>
       <section class="slider">
         <div class="content">
           <div class="slider-row gx-0">
             <div class="slider-col-l">
               <div class="slider-item">
                 <h4>About us</h4>
-                <a href="../Home.html">Home</a>
+                <a href="./index.html">Home</a>
                 <span>» Services</span>
               </div>
             </div>
@@ -146,12 +147,7 @@
       </section>
       <section class="quality">
         <div class="container">
-            <div class="quality-row">
-                <div class="quality-col-l">
-                    <div class="quality-item">
-                    <img src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/services.jpg" alt="" class="img-fluid radius-image">
-                </div>
-            </div>
+            <div class="quality-row">        
                 <div class="quality-col-r">
                         <div class="quality-item">
                         <h5>why choose us</h5>
@@ -170,6 +166,11 @@
                       </div>
                       </div>
                 </div>
+                <div class="quality-col-l">
+                  <div class="quality-item">
+                  <img src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/services.jpg" alt="" class="img-fluid radius-image">
+              </div>
+          </div>
             </div>
         </div>
       </section>
@@ -255,19 +256,19 @@
                   </button>
                 </form>
                 <div class="icon">
-                  <a href="#">
+                  <a href="https://www.facebook.com/w3layouts/">
                     <i class="fa-brands fa-facebook-f"></i>
                   </a>
-                  <a href="#">
+                  <a href="https://in.linkedin.com/company/w3layouts">
                     <i class="fa-brands fa-linkedin-in"></i>
                   </a>
-                  <a href="#">
+                  <a href="https://twitter.com/W3layouts">
                     <i class="fa-brands fa-twitter"></i>
                   </a>
-                  <a href="#">
+                  <a href="https://w3layouts.com/tag/email-templates/">
                     <i class="fa-brands fa-google-plus-g"></i>
                   </a>
-                  <a href="#">
+                  <a href="https://w3layouts.com/">
                     <i class="fa-brands fa-github"></i>
                   </a>
                 </div>
@@ -279,8 +280,8 @@
       <button class="backToTop cd-top text-replace js-cd-top">
         <i class="fa fa-level-up"></i>
       </button>
-      <script src="../js/util.js"></script>
-      <script src="../js/main-backtotop.js"></script>
+      <script src="./js/util.js"></script>
+      <script src="./js/main-backtotop.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

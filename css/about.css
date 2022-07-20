@@ -7,13 +7,16 @@
     max-width: 1200px;
 }
 .header{
+    display: inline-block;
     position:fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 10;
-
+    transition: all .5s;
+    line-height: .5;
 }
+
 
 .header .container{
     padding-top:13px ;
@@ -21,15 +24,19 @@
     height: 90px;
     align-items: center;
     transition: all 0.4s ease 0s;
+    line-height: 0.5;
 }
 .header.nav-fixed {
     padding: 0px;
+    width: 100%;
     border-bottom: none;
     z-index: 99 !important;
     background-color: var(--bg-color);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.06);
     height: 70px;
+    color: #fff;
 }
+
 
 .header .container .container-fluid .navbar-brand{
     font-size: 32px;
@@ -37,12 +44,31 @@
     position: relative;
     padding: 0px;
 }
+.header .container .container-fluid .navbar-brand:hover{
+    color:#000 !important;
+    transition: all 0.5s;
+}
 .header .container .container-fluid .navbar-brand i{
     font-size: 20px;
     position: absolute;
-    top: -10px;
+    top: -25px;
     left: 55px;
     margin-top: 10px;
+}
+.navbar-color {
+    padding: 0px;
+    border-bottom: none;
+    z-index: 99 !important;
+    background-color:#fff !important;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+    height: 70px;
+    align-items: center;
+}
+.navbar-color a {
+    color: #000 !important;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #fff ;
 }
 /* SLIDER */
 .slider .slider-row{
@@ -72,9 +98,11 @@
 }
 .slider .content .slider-col-r{
     width: 75%;
+    margin-top: -220px;
 }
 .slider .content .slider-col-r img{
-    margin-top: -520px;
+    display: inline-block;
+    margin-top:-560px;
     border-radius: 0 0 0 8px;
 }
 /* WELCOME */
@@ -520,7 +548,7 @@ footer .container .footer-row .col-3 .icon a i{
         width: 1170px;
         }
         .slider .content .slider-col-r img {
-           margin-top: -300px;
+           margin-top: -180px;
             padding: 0;
         }
 }
@@ -542,6 +570,7 @@ footer .container .footer-row .col-3 .icon a i{
         }
         .slider .content .slider-col-r{
             width: 60%;
+            margin: 0;
         }
         .slider .content .slider-col-r img {
             margin: 0;
@@ -665,6 +694,7 @@ footer .container .footer-row .col-3 .icon a i{
         }
         .slider .content .slider-col-r{
             width: 60%;
+            margin: 0%;
         }
         .slider .content .slider-col-r img {
             margin: 0;

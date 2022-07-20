@@ -12,7 +12,7 @@
     left: 0;
     width: 100%;
     z-index: 10;
-
+    line-height: .5;
 }
 
 .header .container{
@@ -29,6 +29,7 @@
     background-color: var(--bg-color);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.06);
     height: 70px;
+    width: 100%;
 }
 
 .header .container .container-fluid .navbar-brand{
@@ -37,12 +38,32 @@
     position: relative;
     padding: 0px;
 }
+.header .container .container-fluid .navbar-brand:hover{
+    color:#000 !important;
+    transition: all 0.5s;
+}
 .header .container .container-fluid .navbar-brand i{
     font-size: 20px;
     position: absolute;
-    top: -10px;
+    top: -25px;
     left: 55px;
     margin-top: 10px;
+}
+
+.navbar-color {
+    padding: 0px;
+    border-bottom: none;
+    z-index: 99 !important;
+    background-color:#fff !important;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+    height: 70px;
+    align-items: center;
+}
+.navbar-color a {
+    color: #000 !important;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #fff ;
 }
 /* SLIDER */
 .slider .slider-row{
@@ -72,6 +93,7 @@
 }
 .slider .content .slider-col-r{
     width: 75%;
+    margin-top: -200px;
 }
 .slider .content .slider-col-r img{
     margin-top: -520px;
@@ -125,6 +147,7 @@
 }
 .quality .quality-row{
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
 }
 .quality .quality-row .quality-col-r{
@@ -368,4 +391,204 @@ footer .container .footer-row .col-3 .icon a i{
 }
 .backToTop i{
     color: #fff;
+}
+/* tablet */
+@media screen and (min-width:921px) {
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 1170px;
+        }
+        .slider .content .slider-col-r img {
+           margin-top: -180px;
+            padding: 0;
+        }
+}
+
+/* điện thoại chiều ngang */
+@media screen and (min-width:578px) and (max-width:920px) { 
+    .container{
+        padding:0 80px;
+    } 
+    .header{
+        max-width: auto;
+        position:fixed;
+        padding: 0 200px;
+        }  
+        .slider .content .slider-col-l{
+            margin-left: 10px;
+            margin-top:-30px ;
+            width: 40%;
+        }
+        .slider .content .slider-col-r{
+            width: 60%;
+            margin: 0;
+        }
+        .slider .content .slider-col-r img {
+            margin: 0;
+            padding: 0;
+        }
+        .slider .content .slider-col-l .slider-item h4{
+            font-size: 21.5712px;
+        }
+        .slider .content .slider-col-l .slider-item span{
+            font-size: 15px;
+        }
+        .slider .content .slider-col-l .slider-item a{
+            font-size: 15px;
+        }
+        .slider .content .slider-col-l{
+            margin-left: 90px;
+            margin-top:-30px ;
+            width: 40%;
+        }
+        .slider .content .slider-col-r img {
+           margin-top: -170px;
+        }
+        .products .products-row {
+            grid-template-columns: 1fr 1fr;
+            padding: 0;
+        }
+        .quality .quality-row{
+            display: block;
+         }
+         .quality .quality-row .quality-col-r{
+             margin: 0;
+             width: 100%;
+         }
+         .quality .quality-row .quality-col-l{
+            width: 100%;
+         }
+         .quality .quality-col-l img{
+            width: 100%;
+         }
+         .statistic .statistic-row .statistic-col .statistic-item i{
+            font-size: 27px;
+        }
+        .statistic .statistic-row .statistic-col .statistic-item h4{
+            font-size: 40px;
+        }
+        .statistic .statistic-row .statistic-col .statistic-item p{
+            font-size: 16px;
+        }
+        .agriculture{
+            height: 350px;
+        }
+        .agriculture .content h5{
+            font-size: 20px;
+        }
+        .agriculture .content h3{
+            font-size: 30px;
+        }
+        .agriculture .content{
+            margin: 0;
+            padding-right: 400px;
+        }
+        footer .container .footer-row{
+            display: block;
+            margin-left: -60px;
+        }
+        footer .container .footer-row .footer-col{
+            width: 100%;
+        }
+        footer .container .footer-row .col-1 h3{
+            font-size: 16px;
+        }
+        .backToTop{
+            right:10px;
+        }
+}
+/* điện thoại chiều dọc */
+@media screen and (max-width:576px){
+.header{
+    max-width: 400px;
+    position:fixed;
+    }  
+    .slider .content .slider-col-l{
+        margin-left: 10px;
+        margin-top:-30px ;
+        width: 40%;
+    }
+    .slider .content .slider-col-r{
+        width: 60%;
+        margin:0;
+    }
+    .slider .content .slider-col-r img {
+        margin: 0;
+        padding: 0;
+    }
+    .slider .content .slider-col-l .slider-item h4{
+        font-size: 21.5712px;
+    }
+    .slider .content .slider-col-l .slider-item span{
+        font-size: 15px;
+    }
+    .slider .content .slider-col-l .slider-item a{
+        font-size: 15px;
+    }
+    .products .products-row{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .quality .quality-row{
+       display: block;
+    }
+    .quality .quality-row .quality-col-r{
+        margin: 0;
+        width: 100%;
+    }
+    .quality .quality-col-r .quality-item .content-bottom{
+        display: block;
+    }
+    .quality .quality-col-r .quality-item .content-bottom .quality-item-l{
+        width: 100%;
+    }
+    .quality .quality-col-r .quality-item .content-bottom .quality-item-r{
+        width: 100%;
+    }
+    .quality .quality-row .quality-col-l{
+        width: 100%;
+    }
+    .statistic .statistic-row{
+        flex-wrap: wrap;
+        gap: 60px 0;
+    }
+    .statistic .statistic-row .statistic-col{
+        width: 50%;
+    }
+    .statistic .statistic-row .statistic-col .statistic-item i{
+        font-size: 27px;
+    }
+    .statistic .statistic-row .statistic-col .statistic-item h4{
+        font-size: 32px;
+    }
+    .statistic .statistic-row .statistic-col .statistic-item p{
+        font-size: 16px;
+    }
+    .agriculture .content{
+        margin:0px;
+    }
+    .agriculture .content h5{
+        font-size: 18px;
+    }
+    .agriculture .content h3{
+        font-size: 30px;
+    }
+    .agriculture{
+            height: 350px;
+    }
+    footer .container .footer-row{
+        display: block;
+        margin-left: -60px;
+    }
+    footer .container .footer-row .footer-col{
+        width: 100%;
+    }
+    footer .container .footer-row .col-1 h3{
+        font-size: 16px;
+    }
+    .backToTop{
+        right:10px;
+    } 
 }
